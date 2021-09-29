@@ -1,9 +1,17 @@
-function writeCards(names){
+const writeCards = (names, holiday) => {
+    let newArray = []
     for(let i = 0; i < names.length; i++){
-        console.log(names[i])
-        let newArray = `Thank you, ${names[i]}, for the suprise`
-        
+      
+         newArray.push(`Thank you, ${names[i]}, for the wonderful ${holiday} gift!`)
+    
     }
     return newArray
 }
 
+const countDown = () => {
+    let count = 10 
+    while(count >= 0){
+       console.log(count--)
+        
+    }
+}
